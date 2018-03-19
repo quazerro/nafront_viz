@@ -2,7 +2,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<title>Платні новини "Народного фронту" у онлайн-медіа</title>
-	<script src="narfront_files/d3.js"></script>
+	<script src="docs/d3.js"></script>
 	<style type="text/css">
 		body {
 			font-family: Arial, sans-serif;
@@ -89,7 +89,7 @@
 			return title;
 		};
 
-	d3.csv("narfront.csv", function (data) {
+	d3.csv("docs/narfront.csv", function (data) {
 		var parser = d3.time.format("%d.%m.%Y");
 		for (i=0; i < data.length; i++) {
 				data[i].date_title = data[i].date;
